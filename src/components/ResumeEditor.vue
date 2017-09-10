@@ -37,6 +37,10 @@
                     v-model="resume[item.field][key]">
                 </div>
             </li>
+            <li>
+                {{count}}
+                <button @click="add">test</button>
+            </li>
             <!-- <li>1</li>
                 <li>2</li>
                 <li>3</li>
@@ -90,6 +94,16 @@ export default {
                 ],
                 others: []
             }
+        }
+    },
+    computed: {
+        count(){
+            return this.$store.state.count
+        }
+    },
+    methods: {
+        add(){
+            this.$store.commit('increment')
         }
     }
 }
