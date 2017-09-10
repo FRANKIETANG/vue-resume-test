@@ -6,7 +6,9 @@
                 :class="{active: item.field === selected}"
                 @click="selected = item.field"
                 >
-                {{index}}
+                <svg class="icon">
+                    <use :xlink:href="`#icon-${item.icon}`"></use>
+                </svg>
                 </li> 
                 <!-- <li class="active"> x </li>
                 <li> x </li>
@@ -90,6 +92,10 @@ export default {
                   color: black;
               }
           }
+      }
+      svg.icon{
+          width: 24px;
+          height: 24px;
       }
   }
   ol{
