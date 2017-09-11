@@ -30,16 +30,15 @@ export default new Vuex.Store({
                 {school: 'House of Black and White', content: '学会当一名 no one'}
             ],
             projects: [
-                {company: 'xxxx', content: 'xxxxxxx'},
-                {company: 'xxxx', content: 'xxxxxxx'}
+                {name: '可口可乐广告', content: '离开了 BBDO，消失了3个月创造了脍炙人口的广告歌《everyday》'},
+                {name: 'Lucky Strike等一系列广告'}
             ],
             awards: [
-                {company: 'a', content: 'a'},
-                {company: 'b', content: 'b'}
+                {name: 'Pied Piper的核心和算法', content: '以破纪录的压缩成绩获得了冠军'}
             ],
             contacts: [
-                {company: 'phone', content: '1233445'},
-                {company: 'qq', content: '654321'}
+                {name: 'phone', content: '1233445'},
+                {name: 'qq', content: '654321'}
             ],
             others: []
         }
